@@ -1,0 +1,17 @@
+# Virtual environment folders 
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Environment variables (API keys, secrets)
+.env
+
+# Vector store and database/index files 
+vector_store/
+*.db
+*.faiss
+
+# VSCode settings 
+.vscode/

@@ -99,7 +99,7 @@ Copy the following template into the `.env` file and replace the placeholders wi
 
 
 
-### EMBEDDING SERVICE DETAILS 
+#### EMBEDDING SERVICE DETAILS 
 
 EMBEDDING\_AZURE\_OPENAI\_ENDPOINT="\[embedding-service-endpoint]"
 
@@ -111,7 +111,7 @@ EMBEDDING\_AZURE\_OPENAI\_API\_VERSION="2023-12-01-preview"
 
 
 
-### CHAT SERVICE DETAILS
+#### CHAT SERVICE DETAILS
 
 CHAT\_AZURE\_OPENAI\_ENDPOINT="\[chat-service-endpoint]"
 
@@ -120,6 +120,7 @@ CHAT\_AZURE\_OPENAI\_API\_KEY="\[chat-service-api-key]"
 CHAT\_AZURE\_OPENAI\_DEPLOYMENT="\[chat-model-deployment-name]"
 
 CHAT\_AZURE\_OPENAI\_API\_VERSION="2023-12-01-preview"
+
 
 
 ### 5. Add the Document

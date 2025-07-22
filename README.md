@@ -1,90 +1,79 @@
-\## 📄 Document Chatbot - Azure RAG Project
+## 📄 Document Chatbot - Azure RAG Project
 
 This project is a Retrieval-Augmented Generation (RAG) application that allows you to chat with your own PDF documents. Users can ask natural language questions about the uploaded document, and the AI—powered by Azure OpenAI services—generates answers based solely on the information contained in that document.
 
+## 🚀 Demo
+
+![App Screen](images/screen.png)
 
 
-\## 🚀 Demo
-
-!\[App Screen](images/screen.png)
-
-
-
-\## 🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 
 
-\* \*\*Backend \& AI:\*\* Python, LangChain
+* **Backend & AI:** Python, LangChain
 
-\* \*\*LLM \& Embeddings:\*\* Azure OpenAI
+* **LLM & Embeddings:** Azure OpenAI
 
-\* \*\*Database:\*\* ChromaDB (Local Vector Database)
+* **Database:** ChromaDB 
 
-\* \*\*Frontend:\*\* Streamlit
-
-\* \*\*Dependency Management:\*\* Pip, venv
+* **Frontend:** Streamlit
 
 
-
-\## ⚙️ Installation and Setup
-
-
+## ⚙️ Installation and Setup
 
 To run this project on your local machine, follow the steps below.
 
 
 
-\### Prerequisites
+### Prerequisites
 
 
-
-\* Python 3.9+
-
-\* An Azure account with configured OpenAI services (for both Embedding and Chat models).
+* Python 3.9+
+* An Azure account with configured OpenAI services (for both Embedding and Chat models).
 
 
-
-\### 1. Clone the Repository
+### 1. Clone the Repository
 
 
 
 ```bash
 
-git clone https://github.com/\[your-username]/\[your-repo-name].git
+git clone https://github.com/\[isgandarliulvi]/\[rag-project].git
 
-cd \[your-repo-name]
+cd \[rag-project]
 
 ```
 
 
 
-\### 2. Create and Activate a Virtual Environment
+### 2. Create and Activate a Virtual Environment
 
 
 
 ```bash
 
-\# Create the virtual environment
+# Create the virtual environment
 
 python -m venv venv
 
 
 
-\# Activate the virtual environment (for Windows)
+# Activate the virtual environment (for Windows)
 
 venv\\Scripts\\activate
 
 
 
-\# Activate the virtual environment (for macOS/Linux)
+# Activate the virtual environment (for macOS/Linux)
 
-\# source venv/bin/activate
+# source venv/bin/activate
 
 ```
 
 
 
-\### 3. Install Required Libraries
+### 3. Install Required Libraries
 
 
 
@@ -96,25 +85,20 @@ pip install -r requirements.txt
 
 
 
-\### 4. Set Up Environment Variables
-
-
+### 4. Set Up Environment Variables
 
 The project requires your Azure API keys and endpoint information to communicate with the services.
 
+In the project root directory, create a **`.env`** file.
+
+Copy the following template into the `.env` file and replace the placeholders with your Azure details.
 
 
-\* In the project root directory, create a \*\*`.env`\*\* file.
-
-\* Copy the following template into the `.env` file and replace the placeholders with your Azure details.
-
-
-
-\# .env file template
+# .env file template
 
 
 
-\# --- EMBEDDING SERVICE DETAILS ---
+# EMBEDDING SERVICE DETAILS 
 
 EMBEDDING\_AZURE\_OPENAI\_ENDPOINT="\[embedding-service-endpoint]"
 
@@ -126,7 +110,7 @@ EMBEDDING\_AZURE\_OPENAI\_API\_VERSION="2023-12-01-preview"
 
 
 
-\# --- CHAT SERVICE DETAILS ---
+# CHAT SERVICE DETAILS
 
 CHAT\_AZURE\_OPENAI\_ENDPOINT="\[chat-service-endpoint]"
 
@@ -136,23 +120,15 @@ CHAT\_AZURE\_OPENAI\_DEPLOYMENT="\[chat-model-deployment-name]"
 
 CHAT\_AZURE\_OPENAI\_API\_VERSION="2023-12-01-preview"
 
-```
+
+### 5. Add the Document
+
+* Place the PDF document you want to chat with inside the `data/` folder.
+
+* Update the `DATA\_PATH` variable in `ingest.py` with your file name (e.g., `data/sample\_document.pdf`).
 
 
-
-\### 5. Add the Document
-
-
-
-\* Place the PDF document you want to chat with inside the `data/` folder.
-
-\* Update the `DATA\_PATH` variable in `ingest.py` with your file name (e.g., `data/sample\_document.pdf`).
-
-
-
-
-
-\## 🚀 Usage
+## 🚀 Usage
 
 
 
@@ -160,13 +136,9 @@ Running the project involves two main steps:
 
 
 
-\### Step 1: Create the Vector Database
-
-
+### Step 1: Create the Vector Database
 
 First, process your document and create a searchable vector database. This step only needs to be run once or whenever the document is updated.
-
-
 
 ```bash
 
@@ -174,13 +146,10 @@ python ingest.py
 
 ```
 
-
-
 After completion, a `vector\_store` folder will be generated.
 
 
-
-\### Step 2: Launch the Web Application
+### Step 2: Launch the Web Application
 
 
 

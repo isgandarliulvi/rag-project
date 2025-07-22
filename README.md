@@ -1,6 +1,7 @@
 ## 📄 Document Chatbot - Azure RAG Project
 
-This project is a Retrieval-Augmented Generation (RAG) application that allows you to chat with your own PDF documents. Users can ask natural language questions about the uploaded document, and the AI—powered by Azure OpenAI services—generates answers based solely on the information contained in that document.
+This project is a Retrieval-Augmented Generation (RAG) application built with Streamlit that allows you to chat with your own PDF documents. Users can ask natural language questions about the uploaded document, and the AI powered by Azure OpenAI services generates answers based solely on the information contained in that document.
+
 
 ## 🚀 Demo
 

@@ -62,13 +62,13 @@ python -m venv venv
 
 # Activate the virtual environment (for Windows)
 
-venv\\Scripts\\activate
+venv\Scripts\activate
 
 
 
 # Activate the virtual environment (for macOS/Linux)
 
-# source venv/bin/activate
+source venv/bin/activate
 
 ```
 

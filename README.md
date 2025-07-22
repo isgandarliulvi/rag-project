@@ -40,9 +40,9 @@ To run this project on your local machine, follow the steps below.
 
 ```bash
 
-git clone https://github.com/\[isgandarliulvi]/\[rag-project].git
+git clone https://github.com/isgandarliulvi/rag-project.git
 
-cd \[rag-project]
+cd \rag-project
 
 ```
 

@@ -127,7 +127,7 @@ CHAT\_AZURE\_OPENAI\_API\_VERSION="2023-12-01-preview"
 
 * Place the PDF document you want to chat with inside the `data/` folder.
 
-* Update the `DATA\_PATH` variable in `ingest.py` with your file name (e.g., `data/sample\_document.pdf`).
+* Update the `DATA_PATH` variable in `ingest.py` with your file name (e.g., `data/sample_document.pdf`).
 
 
 ## 🚀 Usage
@@ -148,7 +148,7 @@ python ingest.py
 
 ```
 
-After completion, a `vector\_store` folder will be generated.
+After completion, a `vector_store` folder will be generated.
 
 
 ### Step 2: Launch the Web Application
